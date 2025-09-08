@@ -17,8 +17,6 @@ do{
    scanf("%d",&guessed_number);
      if (scanf("%d", &guessed_number) != 1) {
             printf("Invalid input! Please enter a number.\n");
-            while (getchar() != '\n');
-            continue; 
      }
    if(guessed_number>random_number){
      printf("wrong! enter lower number\n");}
