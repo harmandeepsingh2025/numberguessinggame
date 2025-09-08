@@ -15,10 +15,18 @@ void main()
 do{
    printf("enter number:");
    scanf("%d",&guessed_number);
+     if (scanf("%d", &guessed_number) != 1) {
+            printf("Invalid input! Please enter a number.\n");
+            while (getchar() != '\n');
+            continue; 
+     }
    if(guessed_number>random_number){
      printf("wrong! enter lower number\n");}
   else if (guessed_number<random_number){
      printf("wrong! enter higher number\n");}
+  else if(scanf("%d", &guessed_number) != 1){
+      printf("Invalid input! Please enter a number.\n");
+  }
   else 
      printf("congo!!");
     numberofgusses++;     
